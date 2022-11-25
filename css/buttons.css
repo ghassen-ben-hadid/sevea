@@ -1,0 +1,23 @@
+.accent-btn {
+  font-size: medium;
+  color: white;
+  text-transform: uppercase;
+  padding: 16px 64px;
+  background-color: var(--purple-clr);
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+}
+
+
+.info-btn {
+  font-size: medium;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 28px;
+  background-color: var(--main-clr);
+  outline: none;
+  border: 0;
+  border-radius: 9px;
+  width: max-content;
+}

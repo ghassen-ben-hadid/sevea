@@ -1,0 +1,148 @@
+.landing{
+    height: 465px;
+    margin-block: 92px;
+    margin-inline: 74px;
+    background-image: url(../img/PHOTOS/vincent-van-zalinge-398122.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: center -275px;
+    position: relative;
+}
+
+.landing h1{
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 64px;
+    left: 130px;
+}
+
+.landing h1::before{
+    display: none;
+}
+
+.landing .arrow-left, .landing .arrow-right{
+    color: white;
+    position: absolute;
+    top: 210px;
+}
+.landing .arrow-left{
+    left: 38px;
+}
+.landing .arrow-right{
+    right: 38px;
+}
+/* sections */
+section{
+    display: flex;
+    flex-direction: column;
+    width: 1129px;
+    margin: 0 auto;
+    padding: 28px 16px;
+}
+
+.container{
+    display: flex;
+}
+
+/* promotions */
+
+.promotions .container{
+    position: relative;
+}
+.card{
+    text-align: center;
+    padding: 33px;
+    flex: 1;
+    margin: 30px 0;
+    box-shadow: 2px 5px 5px -3px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 2px 5px 5px -3px rgba(0,0,0,0.24);
+    -moz-box-shadow: 2px 5px 5px -3px rgba(0,0,0,0.24);
+}
+.card:nth-child(2), .card:nth-child(4){
+    border: 1px solid rgb(123, 65, 138);
+}
+.card img{
+    width: 209px;
+    height: 166px;
+    margin-bottom: 14px;
+}
+
+.container .arrow-left, .container .arrow-right{
+    color: rgb(189, 189, 189);
+    position: absolute;
+    top: 30%;
+}
+.container .arrow-left{
+    left: -52px;
+}
+.container .arrow-right{
+    right: -52px;
+}
+
+.purple .card__info{
+    padding: 40px 0;    
+}
+
+.white .card__info{
+    padding: 18px 0;    
+}
+
+.card .primary-heading, .card .info-btn{
+    margin-top: 16px;
+}
+.white .card__info p{
+    color: rgb(63, 63, 63);
+}
+.white .crossed{
+    color: rgb(199, 199, 199);
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 700;
+}
+.card__info h3{
+    color: rgb(180, 180, 180);
+}
+
+.card__info{
+    border-block: 1px solid rgb(177, 176, 176);
+}
+
+.card > p, .card__button{
+    margin: auto;
+}
+
+.promotions-btn {
+    width: fit-content;
+    margin: 16px auto;
+}
+
+.white:nth-child(3) .card__info::before{
+    content: "-20%";
+    background-color: var(--main-clr);
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    height: 22px;
+    width: 60px;
+    top: 49%;
+    left: 60%;
+    border-radius: 3px;
+}
+/* suppliers */
+.suppliers .container{
+    gap: 10px;
+}
+.supplier-btn{
+    border-radius: 0;
+    width: 100%;
+    margin-top: auto;
+}
+/* marques */
+.marques .card{
+    border: 0;
+}
+
+.marques .card__info{
+    padding: 18px 0;    
+}

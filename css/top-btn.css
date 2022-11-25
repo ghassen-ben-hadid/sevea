@@ -1,0 +1,19 @@
+.top-btn{
+    border-radius: 50px;
+    border: 1px solid var(--main-clr);
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 48px;
+    right: 49px;
+}
+
+.top-btn:active{
+background: var(--main-clr);
+}
+.top-btn i{
+    color: var(--main-clr);
+}

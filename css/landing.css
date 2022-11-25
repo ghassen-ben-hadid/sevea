@@ -1,0 +1,75 @@
+html{
+  font-size: calc(15px + 0.390625vw);
+}
+
+body {
+  background-image: url(../../img/PHOTOS/neslihan-gunaydin-3493.jpg);
+  background-size: cover;
+  background-color: grey;
+  background-blend-mode: multiply;
+}
+
+.logo {
+  width: max(20vw, 1em);
+  position: absolute;
+  top: 2vw;
+  left: 10vw;
+}
+
+.wave {
+  margin-top: -6vw;
+}
+.landing {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__container {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 32px;
+  width: min(100%, 28.125em);
+}
+
+.landing__content {
+  text-align: center;
+  display: grid;
+  gap: 16px;
+}
+
+.landing__content * {
+  display: block;
+  min-width: 100%;
+  color: white;
+}
+
+.landing__content input {
+  height: 48px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.landing__content button {
+  border-radius: 0;
+}
+
+.landing__heading {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.landing__title {
+  margin-bottom: 12px;
+}
+
+.landing__content button a:visited, 
+.landing__content button a:link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+

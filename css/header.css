@@ -1,0 +1,129 @@
+.header{
+  height: 510px;
+  background-image: url(../img/PHOTOS/AdobeStock_112281079.jpeg);
+  background-color: rgb(212, 212, 212);
+  background-blend-mode: multiply;
+  background-size: cover;
+  position: relative;
+  background-position: center -480px;
+}
+.logo {
+  width: 374px;
+  margin-left: 162px;
+  margin-top: 18px;
+}
+
+.wave{
+  position: absolute;
+  bottom: calc(100% - 272px);
+
+}
+.navbar{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 20px;
+  align-items: center;
+  height: fit-content;
+}
+
+.links li{
+  list-style: none;
+  padding-inline: 26px;
+  height: fit-content;
+}
+.links li:first-of-type{
+  border-right: 1px solid var(--main-clr);
+}
+.links li:last-of-type{
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.links li:last-of-type span{
+  text-align: end;
+}
+.links li:last-of-type span p:first-of-type{
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.links li a{
+  text-decoration: none;
+}
+
+.links .nav-img{
+  height: 50px;
+}
+
+
+.search-box{
+  position: absolute;
+  bottom: 88px;
+  width: 100%;
+}
+
+.search-box__container {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 16px;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.search-box__content {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 21px;
+  position: relative;
+}
+
+.search-box__content * {
+  border: 0;
+}
+
+.search-box__content input {
+  width: 436px;
+  height: 68px;
+  text-align: center;
+  font-size: 16px;
+}
+.search-box__content input::placeholder{
+  color: rgb(46, 46, 46);
+  font-style: italic;
+  opacity: .9;
+}
+
+.search-arrow{
+  color: var(--main-clr);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 836px;
+}
+
+.search-box__content button {
+  height: 68px;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-box__content button a:visited, 
+.search-box__content button a:link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+

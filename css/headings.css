@@ -1,0 +1,36 @@
+.section-title{
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--clr-grey);
+    background-color: white;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    /* display: inline-block; */
+    padding-inline: 30px;
+    margin: 0 auto 30px auto;
+}
+
+.section-title::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 1770px;
+    background-color: var(--clr-grey);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.primary-heading{
+    display: block;
+    color: var(--purple-clr);
+    font-weight: 600;
+}
+
+.secondary-heading{
+    display: block;
+    color: var(--main-clr);
+    font-weight: 600;
+}
