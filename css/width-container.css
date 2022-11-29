@@ -1,0 +1,38 @@
+.width-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gl-width-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .gl-width-container {
+    padding-inline: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gl-width-container {
+    padding-inline: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .gl-width-container {
+    padding-inline: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gl-width-container {
+    padding-inline: 80px;
+  }
+}

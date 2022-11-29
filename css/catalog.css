@@ -1,0 +1,317 @@
+.catalog {
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .sidebar,
+  .main .info {
+    display: none;
+  }
+}
+
+.refine {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+.refine .accent-btn {
+  border-radius: 0;
+}
+@media (min-width: 992px) {
+  .refine {
+    display: none;
+  }
+}
+
+.card {
+  text-align: center;
+  padding: 20px 33px;
+  flex: 1;
+  margin: 30px 0;
+  box-shadow: 2px 5px 5px -3px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 2px 5px 5px -3px rgba(0, 0, 0, 0.24);
+}
+.card img {
+  /* width: 209px;
+    height: 166px; */
+  margin-bottom: 14px;
+}
+
+.card__info {
+  padding: 18px 0;
+}
+
+.card .card-img {
+  height: 3.125em;
+  margin: 0;
+}
+
+.card-footer {
+  padding: 16px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .card-img {
+    display: none;
+  }
+  .card-footer {
+    justify-content: center;
+  }
+}
+.white .card__info p {
+  color: rgb(63, 63, 63);
+}
+.white .crossed {
+  color: rgb(199, 199, 199);
+  text-decoration: line-through;
+  font-size: 12px;
+  font-weight: 700;
+}
+.card__info h3 {
+  color: rgb(180, 180, 180);
+}
+
+.card__info {
+  border-block: 1px solid rgb(177, 176, 176);
+}
+
+.card > p,
+.card__button {
+  margin: auto;
+}
+
+/* grid system */
+@media (min-width: 992px) {
+  .catalog__container {
+    grid-gap: 3;
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    grid-template-areas:
+      "sidebar main";
+    /* gap: 33px; */
+  }
+
+  .sidebar {
+    grid-area: "sidebar";
+  }
+  .main {
+    grid-area: "main";
+  }
+  .sidebar {
+    text-align: start;
+  }
+}
+/* **** */
+
+@media (min-width: 576px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(5em, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(5em, 1fr));
+  }
+}
+
+@media (min-width: 1500px) {
+  .cards {
+    gap: 3vw;
+    padding-inline: 3vw;
+  }
+}
+
+/* grid system end */
+
+.sidebar {
+  color: rgb(66, 66, 66);
+  font-size: 16px;
+  max-width: 275px;
+  padding-bottom: 48px;
+
+  box-shadow: 2px 5px 5px -3px rgb(0 0 0 / 24%);
+  -webkit-box-shadow: 0px 3px 4px -1px rgb(0 0 0 / 24%);
+  height: fit-content;
+}
+
+.sidebar p {
+  font-size: 18px;
+}
+.sidebar .secondary-heading {
+  margin-bottom: 42px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.sidebar header p {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--clr-grey);
+}
+.sidebar header {
+  position: relative;
+}
+.sidebar-arrow {
+  color: var(--main-clr);
+  position: absolute;
+  top: 14%;
+  right: 14px;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid grey;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: rgb(238, 238, 238);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 7px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.slider {
+  width: 100%;
+  height: 3px;
+  background-color: var(--purple-clr);
+  position: relative;
+  margin-bottom: 42px;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  height: 14px;
+  width: 4px;
+  background-color: #999898;
+}
+
+.slider::before {
+  left: 0;
+}
+
+.slider::after {
+  right: 0;
+}
+.slider-header {
+  position: relative;
+}
+.slider-header::before,
+.slider-header::after {
+  font-size: 16px;
+  color: black;
+}
+.slider-header::before {
+  content: "1€";
+  position: absolute;
+  top: 68px;
+}
+.slider-header::after {
+  content: "6€";
+  position: absolute;
+  top: 68px;
+  right: 0;
+}
+
+.render-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+}
+
+.render-info h1 {
+  padding-inline: 60px;
+}
+
+.n-articles {
+  border-right: 2px solid var(--main-clr);
+}
+
+.rendering-number {
+  width: 100px;
+  height: 50px;
+  padding-inline: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(221, 221, 221);
+}
+.rendering-number i {
+  color: var(--main-clr);
+  font-size: 24px;
+}
+
+.pages-nav {
+  color: grey;
+}
+.pages-nav p {
+  margin-top: 32px;
+  font-size: 20px;
+  color: rgb(167, 167, 167);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.pages-nav span {
+  color: var(--main-clr);
+}
+
+.pages-nav i {
+  font-size: 16px;
+}
