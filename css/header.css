@@ -73,7 +73,7 @@
 .links a {
   text-decoration: none;
   border-right: 1px solid var(--main-clr);
-  padding-right: 4px;
+  padding-right: max(4px, 2vw);
 }
 .links li a:nth-child(3) {
   border: 0;
@@ -86,7 +86,7 @@
 
 @media (min-width: 768px) {
   .logo {
-    margin-left: 32px;
+    margin-left: 16px;
   }
   .links li span,
   .links li img {
@@ -97,7 +97,7 @@
   }
   .links {
     flex: 1;
-    gap: 4px;
+    gap: max(4px, 2vw);
     justify-content: space-between;
   }
   .links li {
@@ -113,7 +113,11 @@
     font-size: 16px;
   }
 }
-
+@media (min-width: 992px) {
+  .logo {
+    margin-left: 32px;
+  }
+}
 .search-box__content button {
   height: 68px;
   border-radius: 0;
