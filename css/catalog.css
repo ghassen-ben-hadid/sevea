@@ -87,9 +87,8 @@
   .catalog__container {
     grid-gap: 3;
     display: grid;
-    grid-template-columns: 16rem 1fr;
-    grid-template-areas:
-      "sidebar main";
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas: "sidebar main";
     /* gap: 33px; */
   }
 
@@ -130,7 +129,7 @@
 .sidebar {
   color: rgb(66, 66, 66);
   font-size: 16px;
-  max-width: 275px;
+  max-width: 375px;
   padding-bottom: 48px;
 
   box-shadow: 2px 5px 5px -3px rgb(0 0 0 / 24%);
@@ -277,7 +276,7 @@ article {
 }
 
 .render-info h1 {
-  padding-inline: 60px;
+  padding-inline: min(60px, 10%);
 }
 
 .n-articles {

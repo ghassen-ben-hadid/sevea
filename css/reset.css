@@ -10,16 +10,19 @@
   box-sizing: border-box;
 }
 
-
 /* Set core root defaults */
-html,html:focus-within {
+html,
+html:focus-within {
   scroll-behavior: smooth;
 }
 
 html {
-  font-size: calc(15px + 0.390625vw)!important;
+  font-size: calc(15px + 0.390625vw) !important;
 }
 
-img{
+img {
   max-width: 100%;
+}
+.header {
+  overflow: hidden;
 }
