@@ -2,6 +2,7 @@
   position: relative;
   background-size: cover;
   background-image: url(../img/PHOTOS/AdobeStock_112281079.jpeg);
+  margin-bottom: 92px;
 }
 .navbar {
   padding: 32px 20px;
@@ -73,7 +74,7 @@
 .links a {
   text-decoration: none;
   border-right: 1px solid var(--main-clr);
-  padding-right: max(4px, 2vw);
+  padding-right: max(4px, 1.5vw);
 }
 .links li a:nth-child(3) {
   border: 0;
@@ -97,7 +98,7 @@
   }
   .links {
     flex: 1;
-    gap: max(4px, 2vw);
+    gap: max(4px, 1.5vw);
     justify-content: space-between;
   }
   .links li {

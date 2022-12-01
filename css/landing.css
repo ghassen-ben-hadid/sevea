@@ -1,4 +1,4 @@
-html{
+html {
   font-size: calc(15px + 0.390625vw);
 }
 
@@ -31,7 +31,7 @@ body {
 .landing__container {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 32px;
-  width: min(100%, 28.125em);
+  width: min(100%, 525px);
 }
 
 .landing__content {
@@ -66,10 +66,9 @@ body {
   margin-bottom: 12px;
 }
 
-.landing__content button a:visited, 
+.landing__content button a:visited,
 .landing__content button a:link {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
-
