@@ -55,7 +55,7 @@
                     <input type="password" name="password" placeholder="Mot de passe" id="">
                     <i class="fa-solid fa-chevron-down search-arrow fa-2x"></i>
                     <button class="accent-btn">
-                        <a>rechercher</a>
+                        <a href="vendor-catalog.html">rechercher</a>
                     </button>
                 </div>
             </div>
@@ -67,10 +67,10 @@
         <h1 class="section-title">résultat de votre recherche</h1>
         <div class="catalog__container">
             <div class="refine">
-                <button class="accent-btn">affiner votre recherche</button>
+                <button  onclick="toggle_div_fun('sectionToHide'); toggleBtnText();" class="accent-btn" id="affinerBtn" class="accent-btn">affiner votre recherche</button>
             </div>
 <!-- sidebar  -->
-            <div class="sidebar width-container">
+            <div class="sidebar width-container" id="sectionToHide">
                 <h1 class="secondary-heading">FILTRER PAR</h1>
                 <article>
                     <header>
@@ -185,8 +185,8 @@
                     </div>
 
                     <div class="cards">
-
-                        <div class="card">
+                    <div class="card-row">
+                        <div class="card" class="slides-item slide-1" id="slide-1" >
                             <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
                             <div class="card__info">
                                 <p>Barbacue américain 3 bruleurs + side</p>
@@ -210,7 +210,29 @@
                                 <p class="primary-heading">299,99 € <span>HT</span></p>
                             </div>
                         </div>                        
-                        <div class="card">
+                        <div class="card" >
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card" >
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card" >
                             <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
                             <div class="card__info">
                                 <p>Barbacue américain 3 bruleurs + side</p>
@@ -232,194 +254,229 @@
                                 <p class="primary-heading">299,99 € <span>HT</span></p>
                             </div>
                         </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>                        
-                        <div class="card">
-                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
-                            <div class="card__info">
-                                <p>Barbacue américain 3 bruleurs + side</p>
-                                <h3>Marque</h3>
-                            </div>
-                            <div class="card-footer">
-                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
-                                <p class="primary-heading">299,99 € <span>HT</span></p>
-                            </div>
-                        </div>
+                            
                     </div>
+                            <div class="card-row">
+                                <div class="card"  class="slides-item slide-2" id="slide-2">
+                                    <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                    <div class="card__info">
+                                        <p>Barbacue américain 3 bruleurs + side</p>
+                                        <h3>Marque</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                        <p class="primary-heading">299,99 € <span>HT</span></p>
+                                    </div>
+                                </div>
+                            
+                                                    
+                                <div class="card">
+                                    <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                    <div class="card__info">
+                                        <p>Barbacue américain 3 bruleurs + side</p>
+                                        <h3>Marque</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                        <p class="primary-heading">299,99 € <span>HT</span></p>
+                                    </div>
+                                </div>                        
+                                <div class="card" >
+                                    <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                    <div class="card__info">
+                                        <p>Barbacue américain 3 bruleurs + side</p>
+                                        <h3>Marque</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                        <p class="primary-heading">299,99 € <span>HT</span></p>
+                                    </div>
+                                </div>                        
+                                <div class="card" >
+                                    <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                    <div class="card__info">
+                                        <p>Barbacue américain 3 bruleurs + side</p>
+                                        <h3>Marque</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                        <p class="primary-heading">299,99 € <span>HT</span></p>
+                                    </div>
+                                </div>                        
+                                <div class="card" >
+                                    <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                    <div class="card__info">
+                                        <p>Barbacue américain 3 bruleurs + side</p>
+                                        <h3>Marque</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                        <p class="primary-heading">299,99 € <span>HT</span></p>
+                                    </div>
+                                </div>                        
+                                <div class="card">
+                                    <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                    <div class="card__info">
+                                        <p>Barbacue américain 3 bruleurs + side</p>
+                                        <h3>Marque</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                        <p class="primary-heading">299,99 € <span>HT</span></p>
+                                    </div>
+                                </div>                        
+                            
+                        </div>
+                        <div class="card-row">
+                            <div class="card"  class="slides-item slide-3" id="slide-3">
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>
+                        
+                                                
+                            <div class="card">
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            <div class="card" >
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            <div class="card" >
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            <div class="card" >
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            <div class="card">
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            
+                        </div>
+                        <div class="card-row">
+                            <div class="card"  class="slides-item slide-4" id="slide-4">
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>
+                        
+                                                
+                            <div class="card">
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            <div class="card" >
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            <div class="card" >
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            <div class="card" >
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            <div class="card">
+                                <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                                <div class="card__info">
+                                    <p>Barbacue américain 3 bruleurs + side</p>
+                                    <h3>Marque</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                    <p class="primary-heading">299,99 € <span>HT</span></p>
+                                </div>
+                            </div>                        
+                            
+                        </div>
+ 
+                    </div>
+                    <div class="carousel__nav">
+                        <a class="slider-nav" href="#slide-1">1</a>
+                        <a class="slider-nav" href="#slide-2">2</a>
+                        <a class="slider-nav" href="#slide-3">3</a>
+                        <a class="slider-nav" href="#slide-4">4</a>
+                      </div>
                     <div class="pages-nav">
                         <p><i class="fa-solid fa-chevron-left fa-3x"></i> 1 ... 3 <span>4</span> 5 ... 9 <i class="fa-solid fa-chevron-right fa-3x arrow-right"></i></p>
                     </div>
@@ -454,5 +511,7 @@
             <p class="copyright">&copy; 2022 SAS Sévéa, tous droits réservés</p>
         </div>
     </footer>
+
+    <script src="../js/index.js"></script>
 </body>
 </html>

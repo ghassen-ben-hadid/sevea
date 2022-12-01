@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">    <title>Sévéa | votre place de marché</title>
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/de5166ff94.js" crossorigin="anonymous"></script>
+        <!-- styles -->
+        <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/width-container.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/headings.css">
+    <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="../css/vendor-catalog.css">
+    <link rel="stylesheet" href="../css/top-btn.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+    <title>Sévéa | Votre place de marché</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <ul class="links">
+                <li><a href="#" class="nav-link secondary-heading">Connexion</a></li>
+                <li><a href="#" class="nav-link secondary-heading">Inscription</a></li>
+                <li>
+                    <img class="nav-img" src="../img/PICTOS/ICON1.svg" alt="">
+                    <span>
+                        <p class="secondary-heading">999,00 €</p>
+                        <p class="secondary-heading">50 articles</p>
+                    </span>
+                    <a href="#" class="nav-link secondary-heading">Mon Panier</a>
+                </li>
+            </ul>
+            <img class="logo" src="../../img/LOGO/LOGO SEVEA.svg" alt="Logo">
+        </nav>
+        <img class="wave" src="../../img/PHOTOS/wave-refined.png" alt="">
+    
+        <div class="search-box">
+            <div class="search-box__container">
+                <div class="search-box__content">
+                    <input type="email" name="email" placeholder="Que rechercher-vous ?" id="">
+                    <input type="password" name="password" placeholder="Mot de passe" id="">
+                    <i class="fa-solid fa-chevron-down search-arrow fa-2x"></i>
+                    <button class="accent-btn">
+                        <a>rechercher</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="catalog gl-width-container">
+        <div class="vendor">
+            <div class="vendor-img">
+                <img src="../img/PHOTOS/vincent-van-zalinge-398122.jpg" alt="">
+            </div>
+            <h1 class="primary-heading">VERSELE-LAGA</h1>
+            <P class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem sit eaque similique perferendis corporis consectetur accusantium cupiditate deserunt iure asperiores natus explicabo assumenda placeat nemo, consequatur totam?</P>
+        </div>
+        <div class="catalog__container">
+            <div class="refine">
+                <button onclick="toggle_div_fun('sectionToHide'); toggleBtnText();" class="accent-btn" id="affinerBtn">affiner votre recherche</button>
+            </div>
+<!-- sidebar  -->
+            <div class="sidebar width-container" id="sectionToHide">
+                <h1 class="secondary-heading">FILTRER PAR</h1>
+                <article>
+                    <header>
+                        <p>Catégories</p>
+                        <i class="fa-solid fa-chevron-down sidebar-arrow"></i>
+                    </header>
+                    <label class="container">Catégorie 1
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Catégorie 2
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Catégorie 3
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Catégorie 4
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                </article>
+
+                <article>
+                    <header class="slider-header">
+                        <p>Prix</p>
+                    </header>
+                    <div class="slider"></div>
+                </article>
+
+                <article>
+                    <header>
+                        <p>Filtre 2</p>
+                        <i class="fa-solid fa-chevron-down sidebar-arrow"></i>
+                    </header>
+                    <label class="container">Choix 1
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Choix 2
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Choix 3
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Choix 4
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                </article>
+
+                <article>
+                    <header>
+                        <p>Filtre 3</p>
+                        <i class="fa-solid fa-chevron-down sidebar-arrow"></i>
+                    </header>
+                    <label class="container">Choix 1
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Choix 2
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Choix 3
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Choix 4
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                </article>
+
+                <article>
+                    <header>
+                        <p>Filtre 4</p>
+                        <i class="fa-solid fa-chevron-down sidebar-arrow"></i>
+                    </header>
+                    <label class="container">Choix 1
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Choix 2
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Choix 3
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Choix 4
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                </article>
+            </div>
+<!-- sidebar end -->
+<!-- main content -->
+            <div class="main">
+                <div class="width-container">
+                    <div class="render-info">
+                        <h1 class="secondary-heading n-articles">21 ARTICLES</h1>
+                        <h1 class="secondary-heading">AFFICHER:</h1>
+                        <div class="rendering-number">
+                            <p>12</p>
+                            <a href="#header"><i class="fa-solid fa-chevron-down"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>
+                    
+                                            
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>                        
+                        <div class="card">
+                            <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
+                            <div class="card__info">
+                                <p>Barbacue américain 3 bruleurs + side</p>
+                                <h3>Marque</h3>
+                            </div>
+                            <div class="card-footer">
+                                <img class="card-img" src="../img/PICTOS/ICON1.svg" alt=""">
+                                <p class="primary-heading">299,99 € <span>HT</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pages-nav">
+                        <p><i class="fa-solid fa-chevron-left fa-3x"></i> 1 ... 3 <span>4</span> 5 ... 9 <i class="fa-solid fa-chevron-right fa-3x arrow-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- main content end -->
+    <div class="top-btn"><a href="#header"><i class="fa-solid fa-chevron-up"></i></a></div>
+
+    <!-- footer -->
+
+    <footer class="page-footer">
+        <div class="footer__container usefulContainer">
+            <img src="../img/LOGO/LOGO SEVEA.svg" alt="logo" class="footer-logo">
+            <div class="info">
+                <div class="info__cell">
+                    <h3 class="secondary-heading">informations</h3>
+                    <p>Mentions légales</p>
+                    <p>CGV</p>
+                    <p>CGU</p>
+                </div>
+                <div class="info__cell">
+                    <h3 class="secondary-heading">espace personnnel</h3>
+                    <p>Mon compte</p>
+                </div>
+                <div class="info__cell">
+                    <h3 class="secondary-heading">espace fournisseur</h3>
+                    <p>Mon compte</p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2022 SAS Sévéa, tous droits réservés</p>
+        </div>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>

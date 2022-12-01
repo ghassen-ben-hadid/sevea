@@ -1,1 +1,32 @@
-/*# sourceMappingURL=vendor-catalog.css.map */
+.vendor {
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 0 15px 2em;
+  margin-bottom: 3em;
+}
+.vendor-img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: -26px;
+}
+.vendor-img img {
+  width: auto;
+  height: 150%;
+  max-width: initial;
+
+  margin-left: -154px;
+  margin-top: -22px;
+}
+.vendor .primary-heading {
+  font-weight: 700;
+  font-style: italic;
+}
+.vendor p {
+  max-width: 500px;
+}

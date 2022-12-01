@@ -5,6 +5,7 @@
   .sidebar,
   .main .info {
     display: none;
+    -webkit-box-shadow: none;
   }
 }
 
@@ -313,4 +314,38 @@ article {
 
 .pages-nav i {
   font-size: 16px;
+}
+
+.visible {
+  display: block;
+}
+@media (max-width: 992px) {
+  .sidebar {
+    max-width: 375px;
+    -webkit-box-shadow: none;
+    text-align: start;
+    max-width: 48%;
+    min-width: 206px;
+  }
+  .sidebar > h1 {
+    text-align: center;
+  }
+  .render-info {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .cards::-webkit-scrollbar {
+    display: none;
+  }
+  .card-row {
+    min-width: 335px;
+  }
 }
