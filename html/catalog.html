@@ -51,8 +51,8 @@
         <div class="search-box">
             <div class="search-box__container">
                 <div class="search-box__content">
-                    <input type="email" name="email" placeholder="Que rechercher-vous ?" id="">
-                    <input type="password" name="password" placeholder="Mot de passe" id="">
+                    <input type="email" name="email" placeholder="Que rechercher-vous ?" required>
+                    <input type="password" name="password" placeholder="Mot de passe" required>
                     <i class="fa-solid fa-chevron-down search-arrow fa-2x"></i>
                     <button class="accent-btn">
                         <a href="vendor-catalog.html">rechercher</a>
@@ -67,7 +67,7 @@
         <h1 class="section-title">résultat de votre recherche</h1>
         <div class="catalog__container">
             <div class="refine">
-                <button  onclick="toggle_div_fun('sectionToHide'); toggleBtnText();" class="accent-btn" id="affinerBtn" class="accent-btn">affiner votre recherche</button>
+                <button onclick="toggle_div_fun('sectionToHide'); toggleBtnText();" class="accent-btn" id="affinerBtn" class="accent-btn">affiner votre recherche</button>
             </div>
 <!-- sidebar  -->
             <div class="sidebar width-container" id="sectionToHide">
@@ -187,6 +187,7 @@
                     <div class="cards">
                     <div class="card-row">
                         <div class="card" class="slides-item slide-1" id="slide-1" >
+                            <span id="slide-1-1"></span>
                             <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
                             <div class="card__info">
                                 <p>Barbacue américain 3 bruleurs + side</p>
@@ -400,6 +401,7 @@
                         </div>
                         <div class="card-row">
                             <div class="card"  class="slides-item slide-4" id="slide-4">
+                                <span id="slide-2-2"></span>
                                 <img src="../img/PHOTOS/JBQ1296221-0101-2250-p06-barbecue-gaz-class-acier-emaille-96kw-feux-class-1.jpg" alt="" class="promotio__image">
                                 <div class="card__info">
                                     <p>Barbacue américain 3 bruleurs + side</p>
@@ -471,14 +473,12 @@
                         </div>
  
                     </div>
-                    <div class="carousel__nav">
-                        <a class="slider-nav" href="#slide-1">1</a>
-                        <a class="slider-nav" href="#slide-2">2</a>
-                        <a class="slider-nav" href="#slide-3">3</a>
-                        <a class="slider-nav" href="#slide-4">4</a>
-                      </div>
-                    <div class="pages-nav">
-                        <p><i class="fa-solid fa-chevron-left fa-3x"></i> 1 ... 3 <span>4</span> 5 ... 9 <i class="fa-solid fa-chevron-right fa-3x arrow-right"></i></p>
+
+                    <div class="pages-nav pages-nav-1">
+                        <p><i class="fa-solid fa-chevron-left fa-3x invisible" onclick="toggle_div_fun_2('invisible');"></i> <a class="slider-nav changeable invisible visible" href="#slide-1">1</a> <span class="invisible">...</span>  <a class="slider-nav changeable" href="#slide-2">2</a> <a class="slider-nav changeable" href="#slide-3">3</a> <a class="slider-nav changeable invisible" href="#slide-4">4</a> <span class="invisible visible">...</span> <i class="fa-solid fa-chevron-right fa-3x arrow-right invisible visible" onclick="toggle_div_fun_2('invisible');"></i></p>
+                    </div>
+                    <div class="pages-nav pages-nav-2">
+                        <p><i class="fa-solid fa-chevron-left fa-3x invisible" onclick="toggle_div_fun_2('invisible');"></i> <a class="slider-nav changeable invisible visible" href="#slide-1-1">1</a> <span class="invisible">...</span> <a class="slider-nav changeable invisible" href="#slide-2-2">2</a> <span class="invisible visible">...</span> <i class="fa-solid fa-chevron-right fa-3x arrow-right invisible visible" onclick="toggle_div_fun_2('invisible');"></i></p>
                     </div>
                 </div>
             </div>

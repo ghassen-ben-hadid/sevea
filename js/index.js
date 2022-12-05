@@ -30,3 +30,21 @@ function toggleBtnText() {
 // }
 
 // renderCarousel(".cards");
+
+var links = document.getElementsByClassName("changeable");
+function changeColorToRed(e) {
+  for (var i = 0; i < links.length; i++) {
+    links[i].style.color = "grey";
+  }
+  e.target.style.color = e.target.style.color ? "green" : "grey";
+}
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", changeColorToRed);
+}
+
+function toggle_div_fun_2(className) {
+  var elements = document.getElementsByClassName(className);
+  for (var i = 0; i < 12; i++) {
+    elements[i].classList.toggle("visible");
+  }
+}

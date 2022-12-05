@@ -24,6 +24,7 @@
 }
 
 .card {
+  position: relative;
   text-align: center;
   padding: 20px 33px;
   flex: 1;
@@ -315,9 +316,15 @@ article {
 .pages-nav i {
   font-size: 16px;
 }
-
+.invisible {
+  display: none;
+}
 .visible {
-  display: block;
+  display: inline;
+}
+.pages-nav-1,
+.pages-nav-2 {
+  display: none;
 }
 @media (max-width: 992px) {
   .sidebar {
@@ -334,7 +341,12 @@ article {
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 993px) {
+  .card-row:last-of-type {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
   .cards {
     display: flex;
     overflow-x: scroll;
@@ -346,6 +358,102 @@ article {
     display: none;
   }
   .card-row {
-    min-width: 335px;
+    min-width: 50%;
   }
+  .pages-nav-2 {
+    display: block;
+  }
+  .pages-nav-1 {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .cards {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .cards::-webkit-scrollbar {
+    display: none;
+  }
+  .card-row {
+    min-width: 100%;
+  }
+  .pages-nav-1 {
+    display: block;
+  }
+  .pages-nav-2 {
+    display: none;
+  }
+}
+.pages-nav-1 a:first-of-type,
+.pages-nav-2 a:first-of-type {
+  color: green;
+}
+.pages-nav-1 a,
+.pages-nav-2 a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.pages-nav-1 span,
+.pages-nav-2 span {
+  color: grey;
+}
+
+#slide-1-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#slide-2-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.card::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.card:hover .card__info p,
+.card:hover .card__info h3 {
+  color: white;
+}
+
+.card:hover .card__info {
+  border-block: 1px solid white;
+}
+.card::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  inset: 0 0 0 0;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(110, 156, 54, 0.7),
+    rgb(110, 156, 54)
+  );
+
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.card {
+  position: relative;
 }

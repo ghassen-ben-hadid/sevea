@@ -189,3 +189,16 @@
     margin-left: 7vw;
   }
 }
+
+@media (min-width: 1200px) {
+  .search-box__content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .search-box__content input {
+    flex-basis: 168%;
+  }
+  .wave {
+    bottom: 43%;
+  }
+}
